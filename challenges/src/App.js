@@ -1,6 +1,4 @@
-
-//Styles
-import { Body } from './App.styles.js'
+import React from 'react';
 
 //Challenge Component
 import Chall from './components/Challenge'
@@ -8,16 +6,19 @@ import Chall from './components/Challenge'
 //Challenges
 import Challenges from './components/ChallengeList/Challenges'
 
+// Routing
+import { BrowserRouter as Router, Route, useParams } from 'react-router-dom';
 
 
 
 function App() {
+
   return (
-    <Body>
+    <Router>
       {Challenges.map(chall => (
-          <Chall ChallTitle={chall.title} ChallCode={chall.jsx} key={chall.id}/>
-      ))} 
-    </Body>
+        <Route exact path={'/challenge/' + chall.id}> <Chall ChallTitle={chall.title} ChallCode={chall.jsx} key={chall.id}/> </Route>
+      ))}
+    </Router>
   );
 }
 
