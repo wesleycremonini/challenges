@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 // Styles
 import { Title, Code } from './Challenge.styles.js'
 
@@ -11,10 +13,10 @@ import { Title, Code } from './Challenge.styles.js'
 function Chall({ ChallTitle, ChallCode }) {
     return (
         <>
-            {/*<GoBack/>*/}
+            <Link to='/'>Back to Home</Link>
             <Title>{ChallTitle}</Title>
             <Code>{ChallCode}</Code>
-            {/*<PrevChall/><NextChall/>*/}
+            
         </>
     );
   };

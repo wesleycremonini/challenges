@@ -7,6 +7,17 @@ export const Title = styled.h1`
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: auto;
+
+    animation: fade 1s;
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        };
+        to {
+            opacity: 1;
+        }
+    }
 `;
 
 export const Code = styled.div`
@@ -16,4 +27,16 @@ export const Code = styled.div`
     margin: auto;
     max-width: 1280px;
     margin-top: 40px;
+
+    animation: fade 1s;
+
+    @keyframes fade {
+        from {
+            opacity: 0;
+        };
+        to {
+            opacity: 1;
+        }
+    }
+
 `;
