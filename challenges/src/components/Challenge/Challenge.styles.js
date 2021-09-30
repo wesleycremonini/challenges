@@ -40,3 +40,19 @@ export const Code = styled.div`
     }
 
 `;
+
+
+export const Nav = styled.div`
+    display: flex;
+    gap: 10px;
+
+
+    a{
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+`;

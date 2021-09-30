@@ -3,20 +3,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Styles
-import { Title, Code } from './Challenge.styles.js'
+import { Title, Code, Nav } from './Challenge.styles.js'
 
 // Components
-//import Title from '../../components/GoBack'
-//import Title from '../../components/PrevChall'
-//import Title from '../../components/NetxChall'
+import Challenges from "../ChallengeList/Challenges"
 
-function Chall({ ChallTitle, ChallCode }) {
+function Chall({ ChallTitle, ChallCode, ChallID }) {
     return (
-        <>
-            <Link to='/'>Back to Home</Link>
+        <>  
+            <Nav>
+                <Link to='/'>HOME</Link>
+                
+                <Link style={ (parseInt(ChallID) - parseInt(1)) < 1 ?{  display: 'none' }:{  display: 'inline-block' } } 
+                    to={`/challenge/${parseInt(ChallID) - parseInt(1)}`}>PREV CHALL</Link>
+                
+                <Link style={ (parseInt(ChallID) + parseInt(1)) > Challenges.length ?{  display: 'none' }:{  display: 'inline-block' } } 
+                    to={`/challenge/${parseInt(ChallID) + parseInt(1)}`}>NEXT CHALL</Link>
+            </Nav>
+            
             <Title>{ChallTitle}</Title>
             <Code>{ChallCode}</Code>
-            
         </>
     );
   };
