@@ -3,6 +3,7 @@ import Challenge2 from './Challenge2'
 import Challenge3 from './Challenge3'
 import Challenge4 from './Challenge4'
 import Challenge5 from './Challenge5'
+import Challenge6 from './Challenge6'
 
 
 const Challenges = [
@@ -11,6 +12,7 @@ const Challenges = [
     {title: 'Update Data from Form Input' , jsx:<Challenge3 /> , id: 3},
     {title: 'Show Alert when Typing' , jsx:<Challenge4 /> , id: 4},
     {title: 'Adding Numbers' , jsx:<Challenge5 /> , id: 5},
+    {title: 'Move a Box' , jsx:<Challenge6 /> , id: 6},
 ]
 
 export default Challenges;
