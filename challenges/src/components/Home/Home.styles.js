@@ -17,3 +17,10 @@ export const Links = styled.div`
         padding: 15px;
     }
 `;
+
+export const Name = styled.div`
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+
+`;

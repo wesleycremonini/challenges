@@ -5,6 +5,7 @@ import Challenge4 from './Challenge4'
 import Challenge5 from './Challenge5'
 import Challenge6 from './Challenge6'
 import Challenge7 from './Challenge7'
+import Challenge8 from './Challenge8'
 
 
 const Challenges = [
@@ -15,6 +16,7 @@ const Challenges = [
     {title: 'Adding Numbers' , jsx:<Challenge5 /> , id: 5},
     {title: 'Move a Box' , jsx:<Challenge6 /> , id: 6},
     {title: 'Create Reusable Components' , jsx:<Challenge7 /> , id: 7},
+    {title: 'Global State useContext' , jsx:<Challenge8 /> , id: 8},
 ]
 
 export default Challenges;
