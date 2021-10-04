@@ -20,7 +20,15 @@ export const Links = styled.div`
 
 export const Name = styled.div`
     margin: auto;
-    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
+
+`;
+
+
+export const WrongName = styled.p`
+    display: none;
+    text-align: center;
+    margin: 0;
 
 `;
