@@ -7,6 +7,7 @@ import Challenge6 from './Challenge6'
 import Challenge7 from './Challenge7'
 import Challenge8 from './Challenge8'
 import Challenge9 from './Challenge9'
+import Challenge10 from './Challenge10'
 
 
 const Challenges = [
@@ -19,6 +20,7 @@ const Challenges = [
     {title: 'Create Reusable Components' , jsx:<Challenge7 /> , id: 7},
     {title: 'Global State useContext' , jsx:<Challenge8 /> , id: 8},
     {title: 'Binary to Decimal' , jsx:<Challenge9 /> , id: 9},
+    {title: 'Border Radius Previewer' , jsx:<Challenge10 /> , id: 10},
 ]
 
 export default Challenges;
