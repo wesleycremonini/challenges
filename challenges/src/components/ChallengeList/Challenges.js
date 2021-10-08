@@ -9,6 +9,8 @@ import Challenge8 from './Challenge8'
 import Challenge9 from './Challenge9'
 import Challenge10 from './Challenge10'
 import Challenge11 from './Challenge11'
+import Challenge12 from './Challenge12'
+import Challenge13 from './Challenge13'
 
 
 const Challenges = [
@@ -23,6 +25,8 @@ const Challenges = [
     {title: 'Binary to Decimal' , jsx:<Challenge9 /> , id: 9},
     {title: 'Border Radius Previewer' , jsx:<Challenge10 /> , id: 10},
     {title: 'Calculator' , jsx:<Challenge11 /> , id: 11},
+    {title: 'Christmas Lights' , jsx:<Challenge12 /> , id: 12},
+    {title: 'CauseEffect' , jsx:<Challenge13 /> , id: 13},
 ]
 
 export default Challenges;
