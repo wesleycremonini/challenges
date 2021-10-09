@@ -26,7 +26,7 @@ const Challenges = [
     {title: 'Border Radius Previewer' , jsx:<Challenge10 /> , id: 10},
     {title: 'Calculator' , jsx:<Challenge11 /> , id: 11},
     {title: 'Christmas Lights' , jsx:<Challenge12 /> , id: 12},
-    {title: 'CauseEffect' , jsx:<Challenge13 /> , id: 13},
+    {title: 'Dollar to Cents' , jsx:<Challenge13 /> , id: 13},
 ]
 
 export default Challenges;
