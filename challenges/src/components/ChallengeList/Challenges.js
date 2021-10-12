@@ -12,6 +12,8 @@ import Challenge11 from './Challenge11'
 import Challenge12 from './Challenge12'
 import Challenge13 from './Challenge13'
 import Challenge14 from './Challenge14'
+import Challenge15 from './Challenge15'
+import Challenge16 from './Challenge16'
 
 
 const Challenges = [
@@ -29,6 +31,8 @@ const Challenges = [
     {title: 'Christmas Lights' , jsx:<Challenge12 /> , id: 12},
     {title: 'Dollar to Cents' , jsx:<Challenge13 /> , id: 13},
     {title: 'Flip Img' , jsx:<Challenge14 /> , id: 14},
+    {title: 'Github Status Scraping' , jsx:<Challenge15 /> , id: 15},
+    {title: 'Github Status Scraping' , jsx:<Challenge16 /> , id: 16},
 ]
 
 export default Challenges;

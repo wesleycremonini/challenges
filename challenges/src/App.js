@@ -20,7 +20,7 @@ function App() {
       <UserContext.Provider value={{name, setName}}>
         <Route exact path='/'> <Home/> </Route>
         {Challenges.map(chall => (
-          <Route exact path={`/challenge/${chall.id}`}> 
+          <Route key={chall.id} exact path={`/challenge/${chall.id}`}> 
             <Chall ChallTitle={chall.title} ChallCode={chall.jsx} key={chall.id} ChallID={chall.id}/> 
           </Route>
         ))}

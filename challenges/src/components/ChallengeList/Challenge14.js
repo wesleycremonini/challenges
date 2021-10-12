@@ -37,7 +37,7 @@ function Challenge14() {
     function url() {
         const url = document.getElementById('url').value;
 
-        if (url.match(/^http[^\?]*.(jpg|jpeg|gif|png|tiff|bmp)(\?(.*))?$/gmi) != null) {
+        if (url.match(/^http[^]*.(jpg|jpeg|gif|png|tiff|bmp)(\?(.*))?$/gmi) != null) {
             setImgURL(url);
 
         } else {
@@ -56,7 +56,7 @@ function Challenge14() {
                 <button onClick={() => handleClick('y', -1)}>Flip</button>
                 <FlexMid>
                     <button onClick={() => handleClick('x', -1)}>Flip</button>
-                    <img id='img' src={imgURL}/>
+                    <img id='img' alt='img' src={imgURL}/>
                     <button onClick={() => handleClick('x', -1)}>Flip</button>
                 </FlexMid>
                 <button onClick={() => handleClick('y', -1)}>Flip</button>

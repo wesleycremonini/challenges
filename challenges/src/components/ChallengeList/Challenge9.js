@@ -7,7 +7,7 @@ function Challenge9() {
         const binary = document.getElementById('binary').value;
         const error = document.getElementById('error');
         for (var i = 0; i < binary.length; i++) {
-            if (binary[i] != 0 && binary[i] != 1) {
+            if (binary[i] !== 0 && binary[i] !== 1) {
                 error.style.display = 'block';
             }
             else {
