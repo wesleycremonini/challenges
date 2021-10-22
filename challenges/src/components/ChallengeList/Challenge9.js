@@ -3,12 +3,16 @@ import React, { useState } from "react";
 
 function Challenge9() {
     const [decimal, setDecimal] = useState();
+
     function handleClick() {
         const binary = document.getElementById('binary').value;
         const error = document.getElementById('error');
+
         for (var i = 0; i < binary.length; i++) {
-            if (binary[i] !== 0 && binary[i] !== 1) {
+            
+            if (binary[i] != 0 && binary[i] != 1) {
                 error.style.display = 'block';
+                console.log('macaco')
             }
             else {
                 setDecimal(parseInt(binary, 2));

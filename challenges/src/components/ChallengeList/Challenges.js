@@ -15,6 +15,9 @@ import Challenge14 from './Challenge14'
 import Challenge15 from './Challenge15'
 import Challenge16 from './Challenge16'
 import Challenge17 from './Challenge17'
+import Challenge18 from './Challenge18'
+import Challenge19 from './Challenge19'
+import Challenge20 from './Challenge20'
 
 
 const Challenges = [
@@ -35,6 +38,9 @@ const Challenges = [
     {title: 'Github Status Scraping' , jsx:<Challenge15 /> , id: 15},
     {title: 'Hello in your language' , jsx:<Challenge16 /> , id: 16},
     {title: 'Keypress Binary Code' , jsx:<Challenge17 /> , id: 17},
+    {title: 'Lorem Ipsum Generator' , jsx:<Challenge18 /> , id: 18},
+    {title: 'Note App' , jsx:<Challenge19 /> , id: 19},
+    {title: 'Pomodoro Clock' , jsx:<Challenge20 /> , id: 20},
 ]
 
 export default Challenges;
