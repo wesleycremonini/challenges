@@ -18,6 +18,7 @@ import Challenge17 from './Challenge17'
 import Challenge18 from './Challenge18'
 import Challenge19 from './Challenge19'
 import Challenge20 from './Challenge20'
+import Challenge21 from './Challenge21'
 
 
 const Challenges = [
@@ -41,6 +42,7 @@ const Challenges = [
     {title: 'Lorem Ipsum Generator' , jsx:<Challenge18 /> , id: 18},
     {title: 'Note App' , jsx:<Challenge19 /> , id: 19},
     {title: 'Pomodoro Clock' , jsx:<Challenge20 /> , id: 20},
+    {title: 'Quiz App' , jsx:<Challenge21 /> , id: 21},
 ]
 
 export default Challenges;

@@ -1,28 +1,17 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useState } from "react";
 
 function Challenge20() {
     const [timer, setTimer] = useState('');
-    let workTime = 0;
-    let restTime = 0;
-    let minutes = 1;
-    let seconds = 0;
     const [workRest, setWorkRest] = useState('work');
-
-    function confirmMinutes() {
-        const work = document.getElementById('work').value;
-        const rest = document.getElementById('rest').value;
-
-        workTime = work;
-        restTime = rest;
-    };
+    let minutes = 0;
+    let seconds = 0;
 
     function startTimer() {
         document.getElementById('start').style.display = 'none';
+        minutes = document.getElementById('work').value - 1;
         seconds = 59;
-        minutes -= 1;
-        let secInterval = setInterval(reduceSeconds, 1000);
-    }
+        setInterval(reduceSeconds, 1000);
+    };
 
     function reduceSeconds() {
         
@@ -32,21 +21,16 @@ function Challenge20() {
         else {
             setTimer(minutes + ':' + seconds);
         }
+
         seconds -= 1;
+
         if (seconds < 1 && minutes > 0) {
             seconds = 59;
             minutes -= 1;
         }
-        else if (seconds < 1  && minutes == 0 && workRest == 'work'){
-            setWorkRest('rest');
-            minutes = document.getElementById('rest').value;
-            console.log('wrong')
-        }
-        else if (seconds < 1  && minutes == 0 && workRest == 'rest'){
-            setWorkRest('work');
-            minutes = document.getElementById('work').value;
-            console.log('right')
-
+        else if (seconds < 1 && minutes == 0){
+            setWorkRest(workRest == 'work' ? 'rest' : 'work');
+            minutes = document.getElementById(workRest == 'work' ? 'work' : 'rest').value;
         }
     };
 
